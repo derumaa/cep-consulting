@@ -18,7 +18,6 @@ submitButton.addEventListener('click', clear)
             if (response.data.erro){
                 throw new Error ('CEP invalido')
             }
-
             content.innerHTML = ''
             createLine(response.data.logradouro)
             createLine(response.data.localidade)
